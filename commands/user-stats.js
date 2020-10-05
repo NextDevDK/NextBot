@@ -24,7 +24,7 @@ module.exports = {
                                 whitelisted = "No"
                                 break;
                             default:
-                                whitelisted = "Unkown"
+                                whitelisted = "Unknown"
                                 break;
                         }
 
