@@ -41,6 +41,9 @@ module.exports = {
                             }, {
                                 name: 'Spiller IP',
                                 value: result[0].IP
+                            },{
+                                name: 'Spiller Whitelisted',
+                                value: whitelisted
                             }, {
                                 name: 'Sidst Logget På',
                                 value: result[0].LASTSEEN
