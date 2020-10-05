@@ -17,10 +17,10 @@ module.exports = {
                         var whitelisted
         
                         switch (result[0].WHITELISTED) {
-                            case true:
+                            case 1:
                                 whitelisted = "Yes"
                                 break;
-                            case false:
+                            case 0:
                                 whitelisted = "No"
                                 break;
                             default:
