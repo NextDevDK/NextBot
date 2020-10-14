@@ -3,24 +3,34 @@ const Discord = require('discord.js');
 module.exports = {
     name: 'whitelist',
     description: 'Whitelist user',
-    async execute(message, args, con) {
+    async execute(message, args, axios) {
         if (!message.channel.name == "admin") return message.channel.send("Please write this in the admin channel!!!");
 
-        var psAdd = 'UPDATE user_data SET WHITELISTED=1 WHERE NAME=?';
-        var psRemove = 'UPDATE user_data SET WHITELISTED=0 WHERE NAME=?';
-        switch(args[0]) {
+        const addOptions = {
+            key: "f6adf148dd7840dd70cc34aafab7b07b",
+            WHITELISTED: 1
+        };
+
+        const removeOptions = {
+            key: "f6adf148dd7840dd70cc34aafab7b07b",
+            WHITELISTED: 0
+        };
+
+        switch (args[0]) {
             case "add":
-                await con.query(psAdd, args[1], function (err, result) {
-                    if (err) throw err;
-                    message.channel.send("Added "+args[1]+" To Whitelist!");
-                });
-            break;
+                await axios.put('http://api.oz1tnj.dk/skynilla/player/whitelist/' + args[1], addOptions)
+                    .then(function (res) {
+                        message.channel.send("Added " + args[1] + " To Whitelist!");
+                    })
+                    .catch(function (error) { message.reply("Vi kunne ikke finde " + args[1] + " i vores database. Prøv igen!"); });
+                break;
             case "remove":
-                await con.query(psRemove, args[1], function (err, result) {
-                    if (err) throw err;
-                    message.channel.send("Removed "+args[1]+" From Whitelist!");
-                });
-            break;
+                await axios.put('http://api.oz1tnj.dk/skynilla/player/whitelist/' + args[1], removeOptions)
+                    .then(function (res) {
+                        message.channel.send("Removed " + args[1] + " From Whitelist!");
+                    })
+                    .catch(function (error) { message.reply("Vi kunne ikke finde " + args[1] + " i vores database. Prøv igen!"); });
+                break;
         }
     },
 };

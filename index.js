@@ -1,6 +1,6 @@
 const fs = require('fs');
 const Discord = require('discord.js');
-var mysql = require('mysql');
+const axios = require('axios')
 const {
     prefix,
     token,
@@ -21,22 +21,6 @@ for (const file of commandFiles) {
 }
 
 const cooldowns = new Discord.Collection();
-
-var con = mysql.createConnection({
-    host: host,
-    user: username,
-    password: password,
-    database: database
-});
-
-con.connect(function (err) {
-    if (err) throw err;
-    console.log("Database Connected!");
-});
-
-con.on('error', function (err) {
-    console.log("[mysql error]", err);
-});
 
 client.once('ready', () => {
     console.log('Ready!');
@@ -88,7 +72,7 @@ client.on('message', async message => {
     setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 
     try {
-        command.execute(message, args, con);
+        command.execute(message, args, axios);
     } catch (error) {
         console.error(error);
         message.reply('there was an error trying to execute that command!');
