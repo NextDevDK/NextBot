@@ -8,7 +8,7 @@ module.exports = {
             if (message.channel.name == "admin") {
                 await message.channel.send("Søger efter " + args[0] + " i databasen.");
 
-                await axios.get('http://api.oz1tnj.dk/skynilla/' + args[0])
+                await axios.get('https://api.oz1tnj.dk/skynilla/player/' + args[0])
                     .then(function (res) {
                         data = res.data.data[0];
 
@@ -63,7 +63,7 @@ module.exports = {
             }
         } else {
             await message.channel.send("Søger efter " + args[0] + " i databasen.");
-            await axios.get('http://api.oz1tnj.dk/skynilla/' + args[0])
+            await axios.get('https://api.oz1tnj.dk/skynilla/player/' + args[0])
                 .then(function (res) {
                     data = res.data.data[0];
                     var dateResult = new Date(data.playtime * 1000).toISOString().substr(11, 8);
