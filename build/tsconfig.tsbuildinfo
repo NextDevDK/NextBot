@@ -272,8 +272,8 @@
         "affectsGlobalScope": false
       },
       "../src/commands/moderation/lockcommand.ts": {
-        "version": "49d579e6f674e687e43170fc5e1af831d8478dfab177e4db6063704af6e09c60",
-        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
+        "version": "53ae46f074821182a746b64e948cfd60b136721ae1db712fcb380e0d05de9d66",
+        "signature": "a5e8603908090ccef4ef002f7fb89fea8e42e743dfd842fc933dcd6da3cbb612",
         "affectsGlobalScope": false
       },
       "../src/commands/moderation/mutecommand.ts": {
@@ -282,7 +282,7 @@
         "affectsGlobalScope": false
       },
       "../src/commands/moderation/purgecommand.ts": {
-        "version": "55ec8206e7fa00819cb17355bb81c5ce423aa9ca7b43f6dd095cb9c8fbd2dbd4",
+        "version": "b6a3ba7793c9c83a580ce1a20fd5b60a7ecd77c535bfe60f1855ce006d373c3c",
         "signature": "42fbcb492e7fcf499106a7b3f645e415947e0e370d7d633e566ae1902234489f",
         "affectsGlobalScope": false
       },
@@ -1262,6 +1262,10 @@
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
+      "../src/commands/moderation/lockcommand.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
       "../src/commands/moderation/mutecommand.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
@@ -1419,7 +1423,19 @@
       "../src/commands/moderation/deafencommand.ts",
       "../src/commands/moderation/infractionscommand.ts",
       "../src/commands/moderation/kickcommand.ts",
-      "../src/commands/moderation/lockcommand.ts",
+      [
+        "../src/commands/moderation/lockcommand.ts",
+        [
+          {
+            "file": "../src/commands/moderation/lockcommand.ts",
+            "start": 1264,
+            "length": 16,
+            "messageText": "A function whose declared type is neither 'void' nor 'any' must return a value.",
+            "category": 1,
+            "code": 2355
+          }
+        ]
+      ],
       "../src/commands/moderation/mutecommand.ts",
       "../src/commands/moderation/purgecommand.ts",
       "../src/commands/moderation/softbancommand.ts",

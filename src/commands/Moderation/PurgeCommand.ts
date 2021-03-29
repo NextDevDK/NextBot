@@ -38,7 +38,7 @@ export default class  PurgeCommand extends  Command {
         }).then(messages => {
             if(message.channel instanceof TextChannel) {
                 message.channel.bulkDelete(messages);
-                message.channel.send("I deleted " + messages.size + " messages");
+                message.channel.send("I deleted " + messages.size + " messages").then(res => res.delete({ timeout: 3000 }))
             } else {
                 return;
             }
