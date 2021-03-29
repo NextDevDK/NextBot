@@ -4,15 +4,15 @@ import { Message, MessageEmbed, GuildMember, TextChannel} from "discord.js";
 
 export default class BanCommand extends Command {
     public constructor() {
-        super("mute", {
-            aliases: ["mute"],
+        super("unmute", {
+            aliases: ["unmute"],
             category: "Moderation",
             description: {
                 content: "mutes a member from the guild",
                 usage: "mute [username] [reason]",
             },
-            userPermissions: ['BAN_MEMBERS' || "ADMINISTRATOR"],
-            clientPermissions: ['BAN_MEMBERS' || "ADMINISTRATOR"],
+            userPermissions: ['MANAGE_ROLES' || "ADMINISTRATOR"],
+            clientPermissions: ['MANAGE_ROLES' || "ADMINISTRATOR"],
             ratelimit: 3,
             args: [
                 {

@@ -257,8 +257,8 @@
         "affectsGlobalScope": false
       },
       "../src/commands/moderation/deafencommand.ts": {
-        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "version": "c511a7bd156671bc0bfe4b773657aa48f5fd21139d556ecca01c8bf5bdf92b38",
+        "signature": "f4b3da2bbd0915f65d079542ae57d2949372b63aef73127d94cd70a10e0a15b8",
         "affectsGlobalScope": false
       },
       "../src/commands/moderation/infractionscommand.ts": {
@@ -272,23 +272,18 @@
         "affectsGlobalScope": false
       },
       "../src/commands/moderation/lockcommand.ts": {
-        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "affectsGlobalScope": false
-      },
-      "../src/commands/moderation/modlogscommand.ts": {
-        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "version": "49d579e6f674e687e43170fc5e1af831d8478dfab177e4db6063704af6e09c60",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
         "affectsGlobalScope": false
       },
       "../src/commands/moderation/mutecommand.ts": {
-        "version": "2f047968e9d03ecc2735d57719cc88f5a73e986c1f22d1458aebf363c054fd28",
+        "version": "2f26ec5daf8e7d55b657f7ec0b2cd822db08ad187956a5ddcfaec467700dd640",
         "signature": "ae1ce39773265a23779a59a7138cd3e7c4cdf32df2f48a8e3adac84ef687f5c1",
         "affectsGlobalScope": false
       },
       "../src/commands/moderation/purgecommand.ts": {
-        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "version": "55ec8206e7fa00819cb17355bb81c5ce423aa9ca7b43f6dd095cb9c8fbd2dbd4",
+        "signature": "42fbcb492e7fcf499106a7b3f645e415947e0e370d7d633e566ae1902234489f",
         "affectsGlobalScope": false
       },
       "../src/commands/moderation/softbancommand.ts": {
@@ -297,8 +292,8 @@
         "affectsGlobalScope": false
       },
       "../src/commands/moderation/tempmutecommand.ts": {
-        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "version": "a31732adb648c72017ad826700f4e9389e4d4b7f209833b90f4aa6253b438d3e",
+        "signature": "784d6eea6d6fc0c1e0bc2d8ccce9265e53cc849caabf623656468f37f34a2371",
         "affectsGlobalScope": false
       },
       "../src/commands/moderation/unbancommand.ts": {
@@ -307,8 +302,8 @@
         "affectsGlobalScope": false
       },
       "../src/commands/moderation/undeafencommand.ts": {
-        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "version": "dace0159fd7ea832605ceadf98bad31d7d42eb9718c16c7c0001647faea83888",
+        "signature": "0d4265cefc0767002b604e49c6dd3fb53cab0663ebc187cf12b810cbb0951fb4",
         "affectsGlobalScope": false
       },
       "../src/commands/moderation/unlockcommand.ts": {
@@ -317,7 +312,7 @@
         "affectsGlobalScope": false
       },
       "../src/commands/moderation/unmutecommand.ts": {
-        "version": "90bb39f33767855af4677d06d0e6fdaae381f0acdc6374963c1cc1c51b956aac",
+        "version": "59591ed432985c3f60e50f69ce15ae17b55a694310e4cc1e9f879ca5d2efa76f",
         "signature": "968415d29279376ada0ee54efaf7577638f5a31c2020b12c2b4ce780febf5488",
         "affectsGlobalScope": false
       },
@@ -641,6 +636,7 @@
       "esModuleInterop": true,
       "experimentalDecorators": true,
       "emitDecoratorMetadata": true,
+      "watch": true,
       "configFilePath": "../tsconfig.json"
     },
     "referencedMap": {
@@ -915,22 +911,45 @@
         "../node_modules/discord.js/typings/index.d.ts",
         "../node_modules/moment/ts3.1-typings/moment.d.ts"
       ],
+      "../src/commands/moderation/deafencommand.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts",
+        "../node_modules/moment/ts3.1-typings/moment.d.ts"
+      ],
       "../src/commands/moderation/kickcommand.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts",
         "../node_modules/moment/ts3.1-typings/moment.d.ts"
+      ],
+      "../src/commands/moderation/lockcommand.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
       ],
       "../src/commands/moderation/mutecommand.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts",
         "../node_modules/moment/ts3.1-typings/moment.d.ts"
       ],
+      "../src/commands/moderation/purgecommand.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
       "../src/commands/moderation/softbancommand.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts",
         "../node_modules/moment/ts3.1-typings/moment.d.ts"
       ],
+      "../src/commands/moderation/tempmutecommand.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts",
+        "../node_modules/moment/ts3.1-typings/moment.d.ts"
+      ],
       "../src/commands/moderation/unbancommand.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts",
+        "../node_modules/moment/ts3.1-typings/moment.d.ts"
+      ],
+      "../src/commands/moderation/undeafencommand.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts",
         "../node_modules/moment/ts3.1-typings/moment.d.ts"
@@ -1235,6 +1254,10 @@
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
+      "../src/commands/moderation/deafencommand.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
       "../src/commands/moderation/kickcommand.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
@@ -1243,11 +1266,23 @@
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
+      "../src/commands/moderation/purgecommand.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
       "../src/commands/moderation/softbancommand.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
+      "../src/commands/moderation/tempmutecommand.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
       "../src/commands/moderation/unbancommand.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
+      "../src/commands/moderation/undeafencommand.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
@@ -1385,7 +1420,6 @@
       "../src/commands/moderation/infractionscommand.ts",
       "../src/commands/moderation/kickcommand.ts",
       "../src/commands/moderation/lockcommand.ts",
-      "../src/commands/moderation/modlogscommand.ts",
       "../src/commands/moderation/mutecommand.ts",
       "../src/commands/moderation/purgecommand.ts",
       "../src/commands/moderation/softbancommand.ts",

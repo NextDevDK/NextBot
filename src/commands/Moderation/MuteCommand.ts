@@ -12,8 +12,8 @@ export default class BanCommand extends Command {
                 content: "mutes a member from the guild",
                 usage: "mute [username] [reason]",
             },
-            userPermissions: ['BAN_MEMBERS' || "ADMINISTRATOR"],
-            clientPermissions: ['BAN_MEMBERS' || "ADMINISTRATOR"],
+            userPermissions: ['MANAGE_ROLES' || "ADMINISTRATOR"],
+            clientPermissions: ['MANAGE_ROLES' || "ADMINISTRATOR"],
             ratelimit: 3,
             args: [
                 {
