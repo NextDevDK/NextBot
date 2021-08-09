@@ -2,7 +2,7 @@ const { Client, Collection, Permissions } = require('discord.js');
 const Util = require('./Util.js');
 
 
-module.exports = class NextBotClient extends Client {
+module.exports = class VinciClient extends Client {
 
 	constructor(options = {}) {
 		super({
