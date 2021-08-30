@@ -1,4 +1,4 @@
-const { Client, Collection, Permissions } = require('discord.js');
+const { Client, Collection, Permissions, Intents} = require('discord.js');
 const Util = require('./Util.js');
 
 
@@ -6,7 +6,7 @@ module.exports = class VinciClient extends Client {
 
 	constructor(options = {}) {
 		super({
-			disableMentions: 'everyone'
+			intents: [Intents.FLAGS.GUILDS]
 		});
 		this.validate(options);
 
