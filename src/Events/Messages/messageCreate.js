@@ -1,7 +1,7 @@
 const Event = require('../../Structures/Event');
 
 
-module.exports = class extends Event {
+module.exports = class messageCreate extends Event {
 
 	async run(message) {
 		const mentionRegex = RegExp(`^<@!?${this.client.user.id}>$`);

@@ -2,7 +2,8 @@ const Command = require('../../Structures/Command');
 const { inspect } = require('util');
 const { VultrexHaste } = require('vultrex.haste');
 const haste = new VultrexHaste({url: "https://haste.bin"})
-const { Type } = require('@extreme_hero/deeptype');
+const { Type } = require('@anishshobith/deeptype');
+
 module.exports = class ass extends Command {
     constructor(...args) {
         super(...args, {
