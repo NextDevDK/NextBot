@@ -1,7 +1,7 @@
 const Event = require('../Structures/Event');
 
 const config = require('../../config.json');
-
+require('../Database/mongodb');
 const chalk = require('chalk');
 const figlet = require('figlet');
 
@@ -14,14 +14,6 @@ module.exports = class extends Event {
 	}
 
 	async run() {
-		/*
-		console.log([
-			`Logged in as ${this.client.user.tag}`,
-			`Loaded ${this.client.commands.size} commands!`,
-			`Loaded ${this.client.events.size} events!`
-		].join('\n'));
-		*/
-
 		console.log(chalk.magenta(figlet.textSync('Next Bot', {
 			font: '3D-ASCII',
 			horizontalLayout: 'default',
@@ -31,12 +23,11 @@ module.exports = class extends Event {
 		})));
 
 		const dateTimestamp = new Date(Date.now());
-		const dateObject = new Date(dateTimestamp); // Convert to a date time object first
-		// const dateObject = new Date(dateTimeString); // for date time string
+		const dateObject = new Date(dateTimestamp); 
 
-		const hours = dateObject.getHours(); // get hours with getHours method
-		const minutes = dateObject.getMinutes(); // get minutes with getMinutes method
-		const seconds = dateObject.getSeconds(); // get seconds with getSeconds method
+		const hours = dateObject.getHours(); 
+		const minutes = dateObject.getMinutes(); 
+		const seconds = dateObject.getSeconds(); 
 		const Currentyear = new Date(Date.now());
 		const year = Currentyear.getFullYear();
 
